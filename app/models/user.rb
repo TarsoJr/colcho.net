@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
                     format: { with: /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/ },
                     uniqueness: true
 
+  scope :confirmed, -> { where.not(confirmed_at: nil) }
+
   before_create do |user|
     user.confirmation_token = SecureRandom.urlsafe_base64
   end
@@ -21,5 +23,9 @@ class User < ActiveRecord::Base
 
   def confirmed?
     confirmed_at.present?
+  end
+
+  def self.authenticate(email, password)
+    confirmed.find_by(email: email).try(:authenticate, password)
   end
 end
