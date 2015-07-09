@@ -1,28 +1,16 @@
-== README
+colcho.net
+==========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[colcho.net](Colcho.net) é uma aplicação que construímos no livro [Ruby On Rails: Coloque sua aplicação web nos trilho](http://casadocodigo.com.br/products/ruby-on-rails-coloque-sua-aplicacao-web-nos-trilhos):
 
-Things you may want to cover:
+O livro é distribuído pela editora [Casa do Código](http://www.casadocodigo.com.br),
+com outros títulos sobre programação e startups.
 
-* Ruby version
+Essa versão do código é para o Rails 4.1. Se você possui a cópia do livro para
+o Rails 4.0, verifique a branch [rails-4.0](https://github.com/vinibaggio/colcho.net/tree/rails-4.0).
 
-* System dependencies
+Licença
+=======
+O [colcho.net](Colcho.net) é distribuído sob a licença MIT:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+www.opensource.org/licenses/MIT
