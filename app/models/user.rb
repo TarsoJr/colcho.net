@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :rooms
+
   has_secure_password
 
   validates :full_name, :location, presence: true

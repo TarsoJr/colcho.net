@@ -1,9 +1,5 @@
 <h2><%= t('.title', title: @room.title) %></h2>
 
-<ul>
-  <li><%= t('.location', location: @room.location) %></li>
-  <li><%= t('.description', description: @room.description) %></li>
-</ul>
+<%= render @room %>
 
-<%= link_to t('.edit'), edit_room_path(@room) %> |
 <%= link_to t('links.back'), rooms_path %>
